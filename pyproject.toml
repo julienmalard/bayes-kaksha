@@ -1,0 +1,19 @@
+[project]
+name = "bayes"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "Julien Malard-Adam", email = "julien.malard@mail.mcgill.ca" },
+]
+dependencies = [
+    "arviz>=0.18.0",
+    "pymc>=5.16.1",
+    "pytensor<=2.31.7"
+]
+requires-python = "<3.13.0,>=3.12"
+readme = "README.md"
+license = { text = "AGPL-3.0" }
+
+
+[tool.pdm]
+distribution = false
