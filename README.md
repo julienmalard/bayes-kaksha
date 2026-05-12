@@ -26,6 +26,8 @@ https://www.python.org/ के "Downloads" पर क्लिक करके �
 
 https://git-scm.com/install/
 
+> git clone https://github.com/julienmalard/bayes-kaksha.git
+
 ## ४. pdm स्थापित करना
 पैथान में हम अलग-अलह पैकेज के प्रयोग करेंगे जिस से बायीसी सांख्यिकी असान से की जाएगी।
 पैथान में इन पैकेज का नियंत्रण करने के लिये हम `pdm` का प्रयोग करेंगे। 
@@ -33,14 +35,18 @@ https://git-scm.com/install/
 
 * https://pdm-project.org/en/latest/#recommended-installation-method
 
-## ५. कक्षा का संकेत स्थापित करना
-PyCharm या VSCodium खोलके, उसमें इसी संकेत खोल देना।
-> git pull  
+## ५. कक्षा का उदाहरण संकेत को पाना  
+PyCharm या VSCodium खोलके, `git project` में https://github.com/julienmalard/bayes-kaksha
+को खोल लेना।
 
-टेर्मिनल खोलके, 
+न तो सीधे इस आज्ञा से क्लोन कर देना।
+> git clone https://github.com/julienmalard/bayes-kaksha
+
+उसके बाद पैचार्म या वीयेस्कोडियम का टेर्मिनल खोलके, निम्नलिखित आज्ञा भेज देना। 
 > pdm install
 
-फिर `स्थापन जाँच.py` नाम की संचिका पर क्लिक करके उसको चलाना। अगर अंत में "सब ठीक ठाक है" का संदेश आता है तो सब ठीक ठाक है। 
+## ६. देख लें कि क्या सब सफल से कर लिये है 
+`स्थापन जाँच.py` नाम की संचिका पर क्लिक करके उसको चलाना। अगर अंत में "सब ठीक ठाक है" का संदेश आता है तो सब ठीक ठाक है। 
 अगर नहीं आता तो सब ठीक नहीं है और मुझसे संपर्क कर लेना।
 
 
