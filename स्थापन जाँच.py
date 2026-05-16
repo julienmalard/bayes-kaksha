@@ -6,11 +6,13 @@ from pymc import HalfCauchy, Model, Normal, sample
 
 from स्थिरांक import परिणाम_नत्थी
 
-rng = np.random.default_rng()
 
 az.style.use("arviz-darkgrid")
 
+
 def आँकड़ों_बनाना():
+    rng = np.random.default_rng()
+
     माप = 200
     true_intercept = 1
     true_slope = 2
@@ -22,6 +24,7 @@ def आँकड़ों_बनाना():
     y = असली_रेखा + rng.normal(scale=0.5, size=माप)
 
     return [x, y]
+
 
 if __name__ == '__main__':
     with Model():  # model specifications in PyMC are wrapped in a with-statement

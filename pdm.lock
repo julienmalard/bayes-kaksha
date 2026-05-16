@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:a53bbd4949fd2a6102071493f202e67605cc0e3ca7c7152722616ff77b6de288"
+content_hash = "sha256:8b2be213af8d9f017dfe67e2fb4d1c67a56398f5701a29518945c4228b44feb5"
 
 [[metadata.targets]]
 requires_python = ">=3.12,<3.13.0"
@@ -151,6 +151,20 @@ groups = ["default"]
 files = [
     {file = "cycler-0.12.1-py3-none-any.whl", hash = "sha256:85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"},
     {file = "cycler-0.12.1.tar.gz", hash = "sha256:88bb128f02ba341da8ef447245a9e138fae777f6a23943da4540077d3601eb1c"},
+]
+
+[[package]]
+name = "ennikkai"
+version = "1.2.6"
+requires_python = "<4.0,>=3.12"
+summary = "Client Python pour le réseau Constellation."
+groups = ["default"]
+dependencies = [
+    "nuchabal>=0.1.3",
+]
+files = [
+    {file = "ennikkai-1.2.6-py3-none-any.whl", hash = "sha256:9450ead25b8a743f03ad33e9921fcf142ddbaddf17826a5c60d9b79144fc1fe7"},
+    {file = "ennikkai-1.2.6.tar.gz", hash = "sha256:c6da51ae12cdc833e81d2bcfb504146272b78476a6f4b60c861611efade3ab79"},
 ]
 
 [[package]]
@@ -465,6 +479,17 @@ groups = ["default"]
 files = [
     {file = "multipledispatch-1.0.0-py3-none-any.whl", hash = "sha256:0c53cd8b077546da4e48869f49b13164bebafd0c2a5afceb6bb6a316e7fb46e4"},
     {file = "multipledispatch-1.0.0.tar.gz", hash = "sha256:5c839915465c68206c3e9c473357908216c28383b425361e5d144594bf85a7e0"},
+]
+
+[[package]]
+name = "nuchabal"
+version = "0.1.5"
+requires_python = "<4.0,>=3.12"
+summary = "Kinuk' ri taq chab'äl pa ri xekaj wachulew"
+groups = ["default"]
+files = [
+    {file = "nuchabal-0.1.5-py3-none-any.whl", hash = "sha256:1fa7004f3b9896ca869de5bb0e5976e4fab170b7b2d106564621847aee5bcbb7"},
+    {file = "nuchabal-0.1.5.tar.gz", hash = "sha256:8f0000f8af55955cf8d7a408a0e16d4c16f1ddabf9e767a99246b02b4e8d86f1"},
 ]
 
 [[package]]
