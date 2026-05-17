@@ -6,11 +6,11 @@ authors = [
     { name = "Julien Malard-Adam", email = "julien.malard@mail.mcgill.ca" },
 ]
 dependencies = [
-    "arviz>=0.18.0",
-    "pymc>=5.16.1",
-    "pytensor<=2.31.7",
+    "arviz>=1.1.0",
     "ennikkai>=1.2.6",
-    "pgmpy>=1.1.2"
+    "matplotlib>=3.10.9",
+    "pgmpy>=1.1.2",
+    "pymc>=6.0.0",
 ]
 requires-python = "<3.13.0,>=3.12"
 readme = "README.md"

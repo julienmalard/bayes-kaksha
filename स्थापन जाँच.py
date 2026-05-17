@@ -7,9 +7,6 @@ from pymc import HalfCauchy, Model, Normal, sample
 from स्थिरांक import परिणाम_नत्थी
 
 
-az.style.use("arviz-darkgrid")
-
-
 def आँकड़ों_बनाना():
     rng = np.random.default_rng()
 
@@ -41,8 +38,7 @@ if __name__ == '__main__':
         # draw 3000 posterior samples using NUTS sampling
         idata = sample(3000)
 
-    axes = az.plot_trace(idata, figsize=(10, 7))
-    fig = axes.ravel()[0].figure
+    fig = az.plot_trace(idata)
     fig.savefig(os.path.join(परिणाम_नत्थी, "जांच.png"))
 
 print("सब ठीक ठाक")
