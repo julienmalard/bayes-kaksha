@@ -10,7 +10,8 @@ import pandas as pd
 import pymc as pm
 from matplotlib.ticker import PercentFormatter
 from matplotlib import colors
-from उपकरण import scale
+from उपकरण import scale, invlogit
+
 rng = np.random.default_rng()
 
 try:
@@ -25,8 +26,6 @@ try:
     mhb_data = pd.read_csv(os.path.join("..", "data", "crossbill.csv"))
 except FileNotFoundError:
     mhb_data = pd.read_csv(pm.get_data("crossbill.csv"))
-
-year = 2001
 
 # remove quadrats with missing surveys
 is_y_column = mhb_data.columns.str.startswith(f"det{str(year)[2:]}")
