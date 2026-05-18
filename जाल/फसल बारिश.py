@@ -21,7 +21,7 @@ print("===== बारिश =====")
 print(cpd_बारिश)
 
 cpd_सिंचाई = TabularCPD(
-    variable="सिंचाई", variable_card=2, values=[[0.1, 0.3], [0.9, 0.7]],
+    variable="सिंचाई", variable_card=2, values=[[0.1, 0.7], [0.9, 0.3]],
     evidence=["बारिश"],
     evidence_card=[2],
     state_names={
